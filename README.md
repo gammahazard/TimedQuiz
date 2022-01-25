@@ -11,7 +11,7 @@ Upon clicking "Start Quiz" you will have 170 (one-hundred and seventy) seconds t
 - If you run out of time you will be given a score of 0!
 - Good Luck!
 
-Play here: 
+Play here: https://gammahazard.github.io/TimedQuiz/
 
 How it looks:
 
