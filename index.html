@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" media="screen" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+  <button  id="highscores" onClick="showscores()">Show hi-scores</button>
+    <p id = "70secondsleft">You have 70 seconds left</p>
+    <!--start btn-->
+    <button id="start" onclick="startQuiz()">Start Quiz</button>
+    <!-- id for quiz timer choices-->
+    <div id="quizcont">
+      <label id="timeCounter"></label>
+      <div id="questionDiv">
+
+        <p id="question">Questions</p>
+
+        <button id="choice0" onclick="checkAnswer(this.value);"></button>
+        <br />
+        <button id="choice1" onclick="checkAnswer(this.value);"></button>
+        <br />
+        <button id="choice2" onclick="checkAnswer(this.value);"></button>
+        <br />
+        <button id="choice3" onclick="checkAnswer(this.value);"></button>
+        <br />
+      </div>
+    </div>
+    <!--results -->
+    <div id="resultsDiv"></div>
+     
+      <button id="CheckResBtn"></button>
+     
+    <button  id="Restart"onClick="window.location.reload()" >Restart</div>   </button> 
+    <div id="inputscore">  
+      <label>   
+      Initials 
+      </label>  
+      <input id="scoreinput" type="text" name="initials" placeholder="nickname" size="10" required>   
+   
+      <button id="submitbtn" type="submit" class="registerbtn" >submit</button>    
+      </form>  
+    </div>
+    
+    <div id="scoretable"></div>
+    <!--tie html to javascript-->
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
