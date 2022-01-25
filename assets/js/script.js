@@ -55,7 +55,7 @@ var questions = [
   var time = 180
   var correctAnswer = "";
   var restartbtn = document.getElementById("Restart");
- var timeleft = document.getElementById("70secondsleft") ; 
+ var timeleft = document.getElementById("secondsleft") ; 
  var submitbtn = document.getElementById("submitbtn")  ;
  var hiscore = document.getElementById("highscores");
  

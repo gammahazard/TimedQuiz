@@ -1,0 +1,11 @@
+
+body {
+  background-color:grey;
+  color:orange;
+  font-size:14px;
+}
+
+#secondsleft {
+  font-size: 150%;
+  color:red;
+}
