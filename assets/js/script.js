@@ -27,7 +27,7 @@ var questions = [
     },
     {
       title: "What are shared on the Internet and are called as Web pages?",
-      choices: ["Programs", "Cables", " Hypertext documents", " None"],
+      choices: ["Programs", "Cables", "Hypertext documents", " None"],
       answer: "Hypertext documents"
     },
     {
