@@ -8,7 +8,13 @@
     <title>Quiz App</title>
   </head>
   <body>
-  <button  id="highscores" onClick="showscores()">Show hi-scores</button>
+    <button onclick="showscores()" id="highscores">High Scores</button>
+ 
+  <script>
+    hiscore.addEventListener('click', 
+  scoretbl.style.display = "block");
+  preventDefault()
+  </script>
     <p id = "secondsleft"><span class="blinking">You have 70 seconds left</span></p>
     <!--start btn-->
     <button id="start" onclick="startQuiz()">Start Quiz</button>
@@ -41,11 +47,17 @@
       </label>  
       <input id="scoreinput" type="text" name="initials" placeholder="nickname" size="10" required>   
    
-      <button id="submitbtn" type="submit" class="registerbtn" >submit</button>    
+      <button id="submitbtn" type="submit" class="submit" >submit</button>    
       </form>  
     </div>
     
-    <div id="scoretable"></div>
+    <div id="scoretable"><p>High Scores</p>
+      <p id="innerscore"></p>
+      <script>
+      document.getElementById("innerscore").innerHTML = localStorage.getItem("score");
+
+      </script>
+      </div>
     <!--tie html to javascript-->
     <script src="./assets/js/script.js"></script>
   </body>

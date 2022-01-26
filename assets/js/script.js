@@ -58,7 +58,8 @@ var questions = [
  var timeleft = document.getElementById("secondsleft") ; 
  var submitbtn = document.getElementById("submitbtn")  ;
  var hiscore = document.getElementById("highscores");
- 
+ var initials = document.getElementById("scoreinput")
+ var scoretbl = document.getElementById("scoretable")
 // 70 second left warning function
  function ShowDiv() {
      if (time<=70)
@@ -82,6 +83,7 @@ var questions = [
   restartbtn.style.display = "none";
   timeleft.style.display = "none";
   inputscore.style.display = "none";
+  scoretbl.style.display = "none";
   
   /*function to start quiz: make startbutton disappear and questions and time counter to begin at same time*/
   function startQuiz() {
@@ -113,7 +115,10 @@ var questions = [
   
     loadNextQuestion();
   }
-
+function showscores () {
+  hiscore.addEventListener('click', 
+  scoretbl.style.display = "block");
+}
  // next question 
   function loadNextQuestion() {
     var currentQuestion = questions[questionIndex];
@@ -163,6 +168,7 @@ var questions = [
 
 function addscore(){
 localStorage.setItem("score", JSON.stringify(time))
+localStorage.setItem("nickname", JSON.stringify(initials))
 }
 
 // end quiz function, clear timer, add score to localstorage, display user score as time left
@@ -183,12 +189,7 @@ localStorage.setItem("score", JSON.stringify(time))
 
   }
 
-  function showscores() {
-    var x = localStorage.getItem(JSON.parse("score"));
-    hiscore.addEventListener('click', showscores)
-    document.getElementById("scoretable").innerHTML = x;
-    
-  }
+
 
 
 
