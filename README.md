@@ -16,4 +16,5 @@ Play here: https://gammahazard.github.io/TimedQuiz/
 How it looks:
 
 
-![7b9a187143d0c07151318bc80e2513ed](https://user-images.githubusercontent.com/92896466/150907216-dd8082f6-3c9a-4a26-96c8-58f3a2160400.png)
+
+![19dd9b6fe3770ba6308e6941a123a8c2](https://user-images.githubusercontent.com/92896466/151105144-e6fc9001-890b-42e2-9021-bbf4be470d25.png)
