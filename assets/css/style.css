@@ -5,7 +5,14 @@ body {
   font-size:14px;
 }
 
-#secondsleft {
-  font-size: 150%;
-  color:red;
+
+.blinking{
+  animation:blinkingText 1.2s infinite;
+}
+@keyframes blinkingText{
+  0%{     color: rgb(255, 0, 0);    }
+  49%{    color: rgb(255, 0, 0); }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: rgb(255, 0, 0);    }
 }

@@ -66,7 +66,7 @@ var questions = [
      timeleft.style.display = "block"
  }
  function RemoveDiv() {
-     if (time<=68)
+     if (time<=60)
      timeleft.style.display = "none"
  }
  function outoftime() {
