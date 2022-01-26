@@ -8,19 +8,21 @@
     <title>Quiz App</title>
   </head>
   <body>
+    <!--highscore btn, shows scoretable-->
     <button onclick="showscores()" id="highscores">High Scores</button>
  
   <script>
     hiscore.addEventListener('click', 
-  scoretbl.style.display = "block");
+  scoretbl.style.display = "inline-block");
   preventDefault()
   </script>
     <p id = "secondsleft"><span class="blinking">You have 70 seconds left</span></p>
     <!--start btn-->
     <button id="start" onclick="startQuiz()">Start Quiz</button>
     <!-- id for quiz timer choices-->
+    <div id="timecounterdiv"><label id="timeCounter"></label></div>
     <div id="quizcont">
-      <label id="timeCounter"></label>
+     
       <div id="questionDiv">
 
         <p id="question">Questions</p>
@@ -39,7 +41,8 @@
     <div id="resultsDiv"></div>
      
       <button id="CheckResBtn"></button>
-     
+     <!--restart btn refreshes page to reset timer, could not figure
+    out how to reset in another way, form for initial, no localstorage for initial yet-->
     <button  id="Restart"onClick="window.location.reload()" >Restart</div>   </button> 
     <div id="inputscore">  
       <label>   
@@ -50,7 +53,7 @@
       <button id="submitbtn" type="submit" class="submit" >submit</button>    
       </form>  
     </div>
-    
+    <!--scoretable display fetch highscore localstorage-->
     <div id="scoretable"><p>High Scores</p>
       <p id="innerscore"></p>
       <script>

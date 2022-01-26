@@ -1,11 +1,28 @@
 
 body {
+  display:block;
   background-color:grey;
-  color:orange;
   font-size:14px;
 }
+button#highscores {
+  position:absolute;
+  margin-top:20%;
 
+}
 
+div#quizcont {
+  background-color:orange;
+  width:15%;
+  display:inline-flex;
+  margin-left:5%;
+}
+p#secondsleft {
+  font-size:150%;
+  color:white;
+  margin-left:20%;
+  border:5px black solid;
+  width:17%;
+}
 .blinking{
   animation:blinkingText 1.2s infinite;
 }
@@ -15,4 +32,12 @@ body {
   60%{    color: transparent; }
   99%{    color:transparent;  }
   100%{   color: rgb(255, 0, 0);    }
+}
+label#timeCounter {
+  font-size:150%;
+  color:white;
+  margin-left:20%;
+  border:5px black solid;
+  width:2.5%;
+  
 }
